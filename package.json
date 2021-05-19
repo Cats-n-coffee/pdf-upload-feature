@@ -1,0 +1,26 @@
+{
+  "name": "pdf-upload-feature",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --watch",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cats-n-coffee/pdf-upload-feature.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cats-n-coffee/pdf-upload-feature/issues"
+  },
+  "homepage": "https://github.com/Cats-n-coffee/pdf-upload-feature#readme",
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "jest": "^26.6.3",
+    "mongodb": "^3.6.7"
+  }
+}
