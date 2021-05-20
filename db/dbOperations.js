@@ -1,13 +1,11 @@
 const { client } = require('./dbConnection');
-require('dotenv').config();
-
-const DB_NAME = process.env.DB_NAME;
+const { config } = require('../config/config');
 
 async function insertPDF() {
-    const clientDb = await client.db(DB_NAME)
+    const clientDb = await client.db(config.DB_NAME)
     .collection('pdf')
 
-    return clientDb.insertOne({ name: 'cato', species: 'cat' })
+    return clientDb.insertOne({ name: 'doggo', species: 'dog' })
         .then(res => console.log('inserted ',res.insertedCount))
         .catch(err => console.log(err))
 }

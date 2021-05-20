@@ -3,14 +3,18 @@ Frontend
 [] display db content to user
 
 Backend
-[] set up server
-    [] post endpoint
+[X] set up server
+    [] post endpoint with controller
     [] get endpoint
-[] connect to db
+[X] connect to db
 [] connect to cloud - aws s3?/ cloudinart?
 [] import pdf file - fs
-[] db operations file - findOne- insertOne
+[] db operations file
+    [] findOne
+    [X] insertOne
 
 [] Write the function/program to parse the PDF
 
 Make this whole thing a reusable feature 
+
+https://cloudinary.com/documentation/node_image_and_video_upload#server_side_upload
