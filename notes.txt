@@ -8,12 +8,12 @@ Backend
     [] get endpoint
 [X] connect to db
 [] connect to cloud - aws s3?/ cloudinart?
-[] import pdf file - fs
+[] import pdf file - fs --> figure out how the pdf gets to the backend
 [] db operations file
     [] findOne
     [X] insertOne
-
-[] Write the function/program to parse the PDF
+[] store pdf data in db
+[X] Write the function/program to parse the PDF
 
 Make this whole thing a reusable feature 
 

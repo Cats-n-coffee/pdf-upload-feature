@@ -15,19 +15,21 @@ function strToObj(string) {
       }, {})
 }
 
+// returns an object from parsed pdf
 function parse(file) {
     let dataBuffer = fs.readFileSync('./assets/Name.pdf'); // will replace with 'file' once frontend is ready to upload docs
-    let parsedData;
 
-    pdfParser(dataBuffer).then(function(data) {
-        console.log(data.text)
-        parsedData = data.text;
+    return pdfParser(dataBuffer).then(function(data) {
+        let parsedData = data.text;
 
         let newStr = parsedData.replace(/^\s+/g, '').split('\n').join(';');
-        let obj = strToObj(newStr);
+        let obj = Object.entries(strToObj(newStr));
+        let lowerCaseEntries = obj.map(entry => [entry[0][0].toLowerCase() + entry[0].slice(1), entry[1]]);
+        let lowerCaseObj = Object.fromEntries(lowerCaseEntries);
 
-        console.log(obj)
+        return lowerCaseObj;
     })
+    .catch(err => console.log('error at parse function ', err))
 }
 
 module.exports = parse;
