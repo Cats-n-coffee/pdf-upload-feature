@@ -29,6 +29,3 @@ async function bootstrap() {
 
 bootstrap();
 
-// https://attacomsian.com/blog/uploading-files-nodejs-express
-// https://www.npmjs.com/package/express-fileupload
-// https://dev.to/taylorbeeston/you-probably-don-t-need-body-parser-in-your-express-apps-3nio
